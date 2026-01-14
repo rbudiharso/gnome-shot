@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.gnome-shot" path="/org/gnome/shell/extensions/gnome-shot/">
+    <key name="capture-shortcut" type="as">
+      <default>['&lt;Shift&gt;&lt;Super&gt;s']</default>
+      <summary>Screenshot shortcut</summary>
+      <description>Keyboard shortcut to take a screenshot with GNOME Shot</description>
+    </key>
+  </schema>
+</schemalist>

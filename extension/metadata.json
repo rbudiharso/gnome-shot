@@ -1,0 +1,9 @@
+{
+  "name": "GNOME Shot",
+  "description": "Global keyboard shortcuts for GNOME Shot screenshot tool",
+  "uuid": "gnome-shot@gnome-shot.github.io",
+  "shell-version": ["45", "46", "47", "48"],
+  "version": 1,
+  "url": "https://github.com/gnome-shot/gnome-shot",
+  "settings-schema": "org.gnome.shell.extensions.gnome-shot"
+}
