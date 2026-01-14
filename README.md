@@ -41,11 +41,29 @@ sudo pacman -S gtk4 libadwaita glib2 cairo pango graphene gdk-pixbuf2 wl-clipboa
 
 ## Installation
 
+### Flatpak (recommended)
+
+```bash
+# Install from Flathub (coming soon)
+flatpak install flathub org.gnome.GnomeShot
+
+# Or build locally
+flatpak install flathub org.gnome.Platform//46 org.gnome.Sdk//46
+flatpak install flathub org.freedesktop.Sdk.Extension.rust-stable//23.08
+
+git clone https://github.com/rbudiharso/gnome-shot.git
+cd gnome-shot
+flatpak-builder --user --install --force-clean build-dir org.gnome.GnomeShot.yml
+
+# Run
+flatpak run org.gnome.GnomeShot
+```
+
 ### Build from source
 
 ```bash
 # Clone the repository
-git clone https://github.com/gnome-shot/gnome-shot.git
+git clone https://github.com/rbudiharso/gnome-shot.git
 cd gnome-shot
 
 # Build
