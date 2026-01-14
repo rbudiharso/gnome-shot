@@ -1,0 +1,36 @@
+app-id: org.gnome.GnomeShot
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: gnome-shot
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.portal.Screenshot
+  - --filesystem=xdg-pictures
+
+build-options:
+  append-path: /usr/lib/sdk/rust-stable/bin
+  env:
+    CARGO_HOME: /run/build/gnome-shot/cargo
+    RUST_BACKTRACE: '1'
+
+modules:
+  - name: gnome-shot
+    buildsystem: simple
+    build-commands:
+      - cargo build --release
+      - install -Dm755 target/release/gnome-shot /app/bin/gnome-shot
+      - install -Dm644 data/org.gnome.GnomeShot.desktop /app/share/applications/org.gnome.GnomeShot.desktop
+      - install -Dm644 data/org.gnome.GnomeShot.metainfo.xml /app/share/metainfo/org.gnome.GnomeShot.metainfo.xml
+      - install -Dm644 data/icons/org.gnome.GnomeShot.svg /app/share/icons/hicolor/scalable/apps/org.gnome.GnomeShot.svg
+    sources:
+      - type: dir
+        path: .

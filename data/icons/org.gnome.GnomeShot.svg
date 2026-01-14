@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="8" y="8" width="112" height="112" rx="16" fill="#3584e4"/>
+
+  <!-- Camera body -->
+  <rect x="24" y="40" width="80" height="56" rx="8" fill="#ffffff"/>
+
+  <!-- Lens -->
+  <circle cx="64" cy="68" r="20" fill="#1c71d8"/>
+  <circle cx="64" cy="68" r="12" fill="#99c1f1"/>
+  <circle cx="64" cy="68" r="6" fill="#1c71d8"/>
+
+  <!-- Flash -->
+  <rect x="76" y="48" width="20" height="8" rx="2" fill="#f6d32d"/>
+
+  <!-- Viewfinder -->
+  <rect x="32" y="48" width="16" height="10" rx="2" fill="#1c71d8"/>
+
+  <!-- Arrow annotation hint -->
+  <path d="M 100 20 L 116 36 L 108 36 L 108 52 L 92 52 L 92 36 L 84 36 Z" fill="#e01b24" transform="rotate(135, 100, 36)"/>
+</svg>

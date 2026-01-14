@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gnome.GnomeShot</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>GNOME Shot</name>
+  <summary>Screenshot and annotation tool</summary>
+  <description>
+    <p>
+      GNOME Shot is a screenshot and annotation tool for GNOME, inspired by Shottr on macOS.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Screenshot capture via XDG Desktop Portal (GNOME/Wayland compatible)</li>
+      <li>Annotation tools: Arrow, Rectangle, Line, Ellipse, Highlight, Blur</li>
+      <li>Color picker with preset colors</li>
+      <li>Undo/Redo support</li>
+      <li>Quick save and copy to clipboard with Escape key</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">org.gnome.GnomeShot.desktop</launchable>
+  <url type="homepage">https://github.com/rbudiharso/gnome-shot</url>
+  <url type="bugtracker">https://github.com/rbudiharso/gnome-shot/issues</url>
+  <developer_name>rbudiharso</developer_name>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.0" date="2026-01-14">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main window with annotation tools</caption>
+      <image>https://raw.githubusercontent.com/rbudiharso/gnome-shot/main/data/screenshots/main.png</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Graphics</category>
+    <category>Utility</category>
+  </categories>
+  <keywords>
+    <keyword>screenshot</keyword>
+    <keyword>capture</keyword>
+    <keyword>annotate</keyword>
+    <keyword>arrow</keyword>
+    <keyword>blur</keyword>
+  </keywords>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+</component>

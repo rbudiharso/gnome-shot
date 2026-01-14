@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GNOME Shot
+Comment=Screenshot and annotation tool
+Exec=gnome-shot
+Icon=org.gnome.GnomeShot
+Terminal=false
+Type=Application
+Categories=Graphics;Utility;
+Keywords=screenshot;capture;annotate;
+StartupNotify=true
